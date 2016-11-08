@@ -10,12 +10,21 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Junior Abranches</a>
+      <%= link_to "Junior Abranches", root_path, class: "name" %>
       <nav>
         <%= link_to "Artigos", posts_path %>
       </nav>
     </header>
 <%= yield %>
+
+<footer id="main_footer">
+  <p class="copyright">&copy; 2016 Junior Abranches</p>
+  <nav>
+    <a href="https://www.facebook.com/junior.abranches.1" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+    <a href="https://github.com/juniorabranches" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/juniorabranches" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  </nav>
+</footer>
 
 </body>
 </html>
