@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
   def update
     if @post.update post_params
-      redirect_to @post, notice: "Huzzah! Your article was successfully saved!"
+      redirect_to @post, notice: "Post salvo com sucesso!"
     else
       render 'edit'
     end

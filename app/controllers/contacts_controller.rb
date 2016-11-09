@@ -9,7 +9,7 @@ def create
   if @contact.deliver
     flash.now[:error] = nil
   else
-    flash.now[:error] = 'Cannot send message.'
+    flash.now[:error] = 'No momento, não foi possível enviar a mensagem.'
     render :new
   end
 end
