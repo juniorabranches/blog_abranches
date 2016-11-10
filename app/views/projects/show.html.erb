@@ -17,8 +17,8 @@
 
 	<% if user_signed_in? %>
 		<div id="admin_links">
-			<%= link_to "Editar Projeto", edit_post_path(@post) %>
-			<%= link_to "Apagar Projeto", post_path(@post), method: :delete, data: { confirm: "Tem certeza?" } %>
+			<%= link_to "Editar Projeto", edit_project_path(@project) %>
+			<%= link_to "Apagar Projeto", project_path(@project), method: :delete, data: { confirm: "Tem certeza?" } %>
 		</div>
 	<% end %>
 
