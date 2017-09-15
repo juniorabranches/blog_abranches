@@ -1,8 +1,38 @@
 # Blog Abranches (https://juniorabranches.herokuapp.com/)
 
-* Ruby on Rails
-* Ruby ~> 2.1.1p76
-* Rails ~> 4.1.5
+	- Articles/Tutorials
+		- Create / Edit / Destroy
+		- Markdown
+		- Syntax highlighting
+		- Comments (Disqus)
+	- Projects
+		- Create / Edit / Destroy
+	- Contact
+		- Contact form
+		- Sendgrid
+	- User (Devise)
+
+## Modeling our Data
+
+**Post**
+	title:string
+	content:string
+
+**Project**
+	title:string
+	description:text
+	link:string
+
+**User**
+
+## Think through the pages we need in our app
+
+- Home
+- Posts#index
+- Posts#Show
+- Projects#index
+- Projects#show
+- Contact
 
 # To run:
 
