@@ -1,18 +1,16 @@
 
   <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 about homepage_content">
-      <h2>Sobre</h2>
+      <h2>About</h2>
       <hr>
-      <p>Olá</p>
-      <p>Sou Analista e Desenvolvedor de Sistemas, um verdadeiro apaixonado por
-        tecnologia, principalmente voltado para desenvolvimento web e mobile.</p>
-      <p>Esse Blog foi criado para manter alguns artigos
-        e projetos publicados para acompanhamento de todos os interessados,
-        espero que de alguma forma possam aproveitar o conte˙do.</p>
-      <p>Obrigado e volte sempre :) </p>
+      <p>Hello</p>      
+      <p>I am a systems and applications developer, passionate for technology.</p>
+      <p>Welcome to my blog,</p>
+      <p>I will post articles and projects about the development world, and share some codes..</p>       
+      <p>Check back often :)</p>
     </div>
     <div class="col-2 homepage_content">
-      <h2>Artigos</h2>
+      <h2>Articles</h2>
       <hr>
   		<% @posts.each do |post| %>
   			<h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -20,7 +18,7 @@
   		<% end %>
     </div>
     <div class="col-3 homepage_content">
-      <h2>Projetos</h2>
+      <h2>Projects</h2>
       <hr>
       <% @projects.each do |project| %>
   			<h3><a href="#"><%= link_to project.title, project %></a></h3>

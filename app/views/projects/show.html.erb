@@ -10,15 +10,15 @@
 
 
 		<div class="button_wrapper">
-			<a href="<%= @project.link %>" class="project_button" target="_blank">Visitar <%= @project.title %></a>
+			<a href="<%= @project.link %>" class="project_button" target="_blank">View this<%= @project.title %></a>
 		</div>
 	</div>
 
 
 	<% if user_signed_in? %>
 		<div id="admin_links">
-			<%= link_to "Editar Projeto", edit_project_path(@project) %>
-			<%= link_to "Apagar Projeto", project_path(@project), method: :delete, data: { confirm: "Tem certeza?" } %>
+			<%= link_to "Edit Project", edit_project_path(@project) %>
+			<%= link_to "Delete Project", project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %>
 		</div>
 	<% end %>
 

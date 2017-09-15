@@ -12,11 +12,11 @@
   <header id="main_navigation" class="clearfix">
       <%= link_to "Junior Abranches", root_path, class: "name" %>
       <nav>
-        <%= link_to "Artigos", posts_path %>
-        <%= link_to "Projetos", projects_path %>
-        <%= link_to "Contato", new_contact_path %>
+        <%= link_to "Articles", posts_path %>
+        <%= link_to "Projects", projects_path %>
+        <%= link_to "Contact", new_contact_path %>
   			<% if user_signed_in? %>
-  				<%= link_to "Sair", destroy_user_session_path, method: :delete %>
+  				<%= link_to "Exit", destroy_user_session_path, method: :delete %>
   			<% end %>
       </nav>
     </header>
@@ -28,7 +28,7 @@
 <%= yield %>
 
 <footer id="main_footer">
-  <p class="copyright">&copy; 2016 Junior Abranches</p>
+  <p class="copyright">&copy; 2017 Junior Abranches</p>
   <nav>
     <a href="https://www.facebook.com/junior.abranches.1" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
     <a href="https://github.com/juniorabranches" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
