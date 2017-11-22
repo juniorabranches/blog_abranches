@@ -28,6 +28,8 @@ gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.4.1'
 gem 'tzinfo-data' 
 gem 'bcrypt', '~> 3.1.1', :require => 'bcrypt'
+gem "webpush", github: "rossta/webpush", branch: "master"
+gem "sucker_punch"
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
